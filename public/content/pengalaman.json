@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Actuarial Intern",
+      "company": "PT. Howden Insurance Brokers Indonesia",
+      "year": "2025",
+      "description": "Rotated across four divisions: CIR, FSA, GCRM, and Risk Management. Contributed to the development of actuarial models and risk assessment tools.",
+      "achievements": [
+        "Assisted in reviewing insurance documents, quotations, and policy-related information.",
+        "Supported claims administration and claim monitoring activities.",
+        "Conducted a case study by applying statistical and machine learning methods to support risk assessment and decision-making."
+      ],
+      "foto_kegiatan": "/images/kegiatan/img-1.jpg"
+    },
+    {
+      "title": "Practicum Assistant of Statistical Data Analysis",
+      "company": "Institut Teknologi Sumatera",
+      "year": "2025",
+      "description": "Assisted lecturers in facilitating practical sessions on statistical data analysis",
+      "achievements": [
+        "Guided students in using Microsoft Excel and R for data processing, analysis, and interpretation.",
+        "Supported the review of assignments and practical work, ensuring accuracy and attention to detail.",
+        "Developed analytical, communication, and problem-solving skills through student mentoring and academic assistance."
+      ],
+      "foto_kegiatan": "/images/kegiatan/dummy-kegiatan.jpg"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "portofolio_data"
+    label: "Data Portofolio"
+    files:
+      # 1. File JSON Pengalaman
+      - label: "Pengalaman Kerja"
+        name: "pengalaman"
+        file: "public/content/pengalaman.json"
+        fields:
+          - label: "Daftar Pengalaman"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Posisi", name: "title", widget: "string"}
+              - {label: "Perusahaan", name: "company", widget: "string"}
+              - {label: "Tahun", name: "year", widget: "string"}
+              - {label: "Deskripsi", name: "description", widget: "text"}
+              - {label: "Pencapaian (Opsional)", name: "achievements", widget: "list", required: false}
+              - {label: "Foto Kegiatan (Opsional)", name: "foto_kegiatan", widget: "image", required: false}
+
+      # 2. File JSON Kredensial
+      - label: "Kredensial & Sertifikasi"
+        name: "kredensial"
+        file: "public/content/kredensial.json"
+        fields:
+          - label: "Daftar Kredensial"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Nama Sertifikasi", name: "name", widget: "string"}
+              - {label: "Penyelenggara", name: "issuer", widget: "string"}
+              - {label: "Deskripsi", name: "description", widget: "text"}
+      
+      # 3. File JSON Profil
+      - label: "Data Profil Utama"
+        name: "profil"
+        file: "public/content/profil.json"
+        fields:
+          - {label: "Nama Lengkap", name: "nama", widget: "string"}
+          - {label: "Titel/Gelar", name: "titel", widget: "string"}
+          - {label: "Spesialisasi Singkat", name: "spesialisasi_singkat", widget: "string"}
+          - {label: "Deskripsi Profil (Paragraf)", name: "deskripsi", widget: "text"}
+          - {label: "Foto Profil", name: "foto", widget: "image"}
