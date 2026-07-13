@@ -212,11 +212,11 @@ export default function App() {
               <span>Email</span>
             </a>
             <a href="https://www.linkedin.com/in/aliyaaryati" className="flex items-center space-x-2 bg-white px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-all text-slate-700 hover:text-blue-700 font-medium border border-slate-200 w-full sm:w-auto justify-center">
-              <img src="public\linkedin.svg" alt="LinkedIn" className="w-5 h-5" />
+              <img src="/linkedin.svg" alt="LinkedIn" className="w-5 h-5" />
               <span>LinkedIn</span>
             </a>
             <a href="https://www.instagram.com/aliyaaryti" className="flex items-center space-x-2 bg-white px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-all text-slate-700 hover:text-pink-600 font-medium border border-slate-200 w-full sm:w-auto justify-center">
-              <img src="public\instagram.svg" alt="Instagram" className="w-5 h-5" />
+              <img src="/instagram.svg" alt="Instagram" className="w-5 h-5" />
               <span>Instagram</span>
             </a>
           </div>
