@@ -4,11 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager - Portofolio</title>
-    <!-- Include the CMS script -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- 1. Taruh Netlify Identity di head -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Script ini untuk autentikasi nanti di Netlify -->
+    <!-- 2. Pindahkan script CMS ke dalam body (supaya tag body sudah kebaca saat script jalan) -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    
+    <!-- 3. Script untuk redirect saat login -->
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

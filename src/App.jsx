@@ -65,9 +65,9 @@ export default function App() {
             
             <a href="#experience" className="hover:text-blue-700 transition-colors">Experience</a>
           </div>
-          <a href="#contact" className="bg-slate-900 text-white px-5 py-2 text-sm font-medium rounded hover:bg-slate-800 transition-colors">
+          {/* <a href="#contact" className="bg-slate-900 text-white px-5 py-2 text-sm font-medium rounded hover:bg-slate-800 transition-colors">
             Contact Me
-          </a>
+          </a> */}
         </div>
       </nav>
 
@@ -194,11 +194,11 @@ export default function App() {
       <footer id="contact" className="bg-slate-900 text-slate-300 py-12">
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
-            <h3 className="text-xl font-bold text-white mb-2">Mari Berdiskusi</h3>
-            <p className="text-sm text-slate-400">Terbuka untuk peluang konsultasi dan kolaborasi teknis.</p>
+            <h3 className="text-xl font-bold text-white mb-2">Lets Discuss</h3>
+            <p className="text-sm text-slate-400">Open to discussions about opportunities and technical collaborations.</p>
           </div>
           <div className="flex space-x-4">
-            <a href="#" className="p-3 bg-slate-800 rounded-full hover:bg-blue-700 transition-colors text-white">
+            <a href="mailto:aliyaaaryati754@gmail.com" className="p-3 bg-slate-800 rounded-full hover:bg-blue-700 transition-colors text-white">
               <Mail size={20} />
             </a>
             <a href="https://www.linkedin.com/in/aliyaaryati" className="p-3 bg-slate-800 rounded-full hover:bg-blue-700 transition-colors">
