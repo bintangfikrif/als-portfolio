@@ -48,3 +48,6 @@ collections:
           - {label: "Spesialisasi Singkat", name: "spesialisasi_singkat", widget: "string"}
           - {label: "Deskripsi Profil (Paragraf)", name: "deskripsi", widget: "text"}
           - {label: "Foto Profil", name: "foto", widget: "image"}
+          - {label: "File Resume", name: "resume", widget: "file", required: false}
+
+      

@@ -87,10 +87,19 @@ export default function App() {
               {profil.deskripsi || "Deskripsi portofolio..."}
             </p>
             <div className="flex space-x-4">
-              <button className="flex items-center space-x-2 bg-blue-700 text-white px-6 py-3 rounded font-medium hover:bg-blue-800 transition-colors shadow-sm">
-                <FileText size={18} />
-                <span>Download Resume</span>
-              </button>
+              {/* Render tombol hanya jika profil.resume ada nilainya */}
+              {profil.resume && (
+                <a 
+                  href={profil.resume} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="flex items-center space-x-2 bg-blue-700 text-white px-6 py-3 rounded font-medium hover:bg-blue-800 transition-colors shadow-sm"
+                >
+                  <FileText size={18} />
+                  <span>Download Resume</span>
+                </a>
+              )}
             </div>
           </div>
           
