@@ -28,7 +28,13 @@
       "title": "Assistant Lecturer of General Insurance",
       "company": "Institut Teknologi Sumatera",
       "year": "2025",
-      "description": "Assisted lecturers in delivering General Insurance courses and supporting classroom activities.\nExplain actuarial modeling methods used in premium calculation, reserves, and insurance risk assessment"
+      "description": "Assisted lecturers in delivering General Insurance courses and supporting classroom activities.\n",
+      "achievements": [
+        "Explain actuarial modeling methods used in premium calculation",
+        "reserves",
+        "and insurance risk assessment.",
+        "Prepared learning materials and assisted in evaluating assignments and projects"
+      ]
     }
   ]
 }
