@@ -65,9 +65,9 @@ export default function App() {
             
             <a href="#experience" className="hover:text-blue-700 transition-colors">Experience</a>
           </div>
-          {/* <a href="#contact" className="bg-slate-900 text-white px-5 py-2 text-sm font-medium rounded hover:bg-slate-800 transition-colors">
+          <a href="#contact" className="bg-slate-900 text-white px-5 py-2 text-sm font-medium rounded hover:bg-slate-800 transition-colors">
             Contact Me
-          </a> */}
+          </a>
         </div>
       </nav>
 
