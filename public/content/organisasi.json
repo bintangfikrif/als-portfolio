@@ -1,13 +1,14 @@
 {
   "items": [
     {
-      "title": "Division Head of Public Relations",
-      "organization": "Himpunan Mahasiswa Statistika ITERA",
+      "title": "Staff of Secretary Division",
+      "organization": "Himpunan Mahasiswa Sains Aktuaria ITERA",
       "year": "2024",
-      "description": "Led the public relations division in managing communication strategy and external partnerships for departmental events.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       "achievements": [
-        "Coordinated collaborations with external organizations and sponsors.",
-        "Managed the division's social media presence and event publications."
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+        "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Ut enim ad minim veniam"
       ],
       "foto_kegiatan": ""
     }
