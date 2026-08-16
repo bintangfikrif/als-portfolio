@@ -1,15 +1,31 @@
 {
   "items": [
     {
-      "title": "Undergraduate Thesis: Actuarial Risk Modeling",
+      "title": "Practicum Assistant of Statistical Data Analysis",
       "institution": "Institut Teknologi Sumatera",
       "year": "2025",
-      "description": "Conducted independent research on statistical and machine learning approaches to insurance risk assessment as part of the undergraduate thesis project.",
+      "description": "Assisted lecturers in facilitating practical sessions on statistical data analysis",
       "achievements": [
-        "Designed and validated a predictive model using real insurance claim datasets.",
-        "Presented findings to a panel of faculty examiners and defended the methodology."
+        "Guided students in using Microsoft Excel and R for data processing",
+        "analysis",
+        "and interpretation.",
+        "Supported the review of assignments and practical work",
+        "ensuring accuracy and attention to detail.",
+        "Developed analytical",
+        "communication",
+        "and problem-solving skills through student mentoring and academic assistance."
       ],
       "foto_kegiatan": ""
+    },
+    {
+      "title": "Assistant Lecturer of General Insurance",
+      "institution": "Institut Teknologi Sumatera",
+      "year": "2025",
+      "description": "Assisted lecturers in delivering General Insurance courses and supporting classroom activities.",
+      "achievements": [
+        "Explain actuarial modeling methods used in premium calculation reserves and insurance risk assessment.",
+        "Prepared learning materials and assisted in evaluating assignments and projects."
+      ]
     }
   ]
 }
