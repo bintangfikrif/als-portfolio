@@ -25,7 +25,67 @@ collections:
               - {label: "Pencapaian (Opsional)", name: "achievements", widget: "list", required: false}
               - {label: "Foto Kegiatan (Opsional)", name: "foto_kegiatan", widget: "image", required: false}
 
-      # 2. File JSON Kredensial
+      # 2. File JSON Pengalaman Akademik
+      - label: "Pengalaman Akademik"
+        name: "akademik"
+        file: "public/content/akademik.json"
+        fields:
+          - label: "Daftar Pengalaman Akademik"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Judul/Peran", name: "title", widget: "string"}
+              - {label: "Institusi", name: "institution", widget: "string"}
+              - {label: "Tahun", name: "year", widget: "string"}
+              - {label: "Deskripsi", name: "description", widget: "text"}
+              - {label: "Pencapaian (Opsional)", name: "achievements", widget: "list", required: false}
+              - {label: "Foto Kegiatan (Opsional)", name: "foto_kegiatan", widget: "image", required: false}
+
+      # 3. File JSON Pengalaman Organisasi
+      - label: "Pengalaman Organisasi"
+        name: "organisasi"
+        file: "public/content/organisasi.json"
+        fields:
+          - label: "Daftar Pengalaman Organisasi"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Jabatan/Peran", name: "title", widget: "string"}
+              - {label: "Organisasi", name: "organization", widget: "string"}
+              - {label: "Tahun", name: "year", widget: "string"}
+              - {label: "Deskripsi", name: "description", widget: "text"}
+              - {label: "Pencapaian (Opsional)", name: "achievements", widget: "list", required: false}
+              - {label: "Foto Kegiatan (Opsional)", name: "foto_kegiatan", widget: "image", required: false}
+
+      # 4. File JSON Proyek
+      - label: "Proyek"
+        name: "projects"
+        file: "public/content/projects.json"
+        fields:
+          - label: "Daftar Proyek"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Judul Proyek", name: "title", widget: "string"}
+              - {label: "Deskripsi (Paragraf)", name: "description", widget: "text"}
+              - {label: "Tools/Teknologi", name: "tools", widget: "list", required: false}
+              - {label: "Media/Gambar Proyek", name: "media", widget: "image", required: false}
+
+      # 5. File JSON Awards
+      - label: "Penghargaan"
+        name: "awards"
+        file: "public/content/awards.json"
+        fields:
+          - label: "Daftar Penghargaan"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Judul Penghargaan", name: "title", widget: "string"}
+              - {label: "Pemberi Penghargaan", name: "issuer", widget: "string"}
+              - {label: "Tahun", name: "year", widget: "string"}
+              - {label: "Deskripsi", name: "description", widget: "text"}
+
+      # 6. File JSON Kredensial
       - label: "Kredensial & Sertifikasi"
         name: "kredensial"
         file: "public/content/kredensial.json"
@@ -38,7 +98,7 @@ collections:
               - {label: "Penyelenggara", name: "issuer", widget: "string"}
               - {label: "Deskripsi", name: "description", widget: "text"}
       
-      # 3. File JSON Profil
+      # 7. File JSON Profil
       - label: "Data Profil Utama"
         name: "profil"
         file: "public/content/profil.json"

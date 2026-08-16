@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "title": "Insurance Claim Risk Prediction",
+      "description": "Built a machine learning pipeline to predict high-risk insurance claims, combining statistical feature engineering with classification models to support underwriting decisions.",
+      "tools": ["Python", "scikit-learn", "Pandas"],
+      "media": ""
+    }
+  ]
+}
