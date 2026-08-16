@@ -11,28 +11,6 @@
         "Conducted a case study by applying statistical and machine learning methods to support risk assessment and decision-making."
       ],
       "foto_kegiatan": "/images/kegiatan/img-1.jpg"
-    },
-    {
-      "title": "Practicum Assistant of Statistical Data Analysis",
-      "company": "Institut Teknologi Sumatera",
-      "year": "2025",
-      "description": "Assisted lecturers in facilitating practical sessions on statistical data analysis",
-      "achievements": [
-        "Guided students in using Microsoft Excel and R for data processing, analysis, and interpretation.",
-        "Supported the review of assignments and practical work, ensuring accuracy and attention to detail.",
-        "Developed analytical, communication, and problem-solving skills through student mentoring and academic assistance."
-      ],
-      "foto_kegiatan": "/images/kegiatan/dummy-kegiatan.jpg"
-    },
-    {
-      "title": "Assistant Lecturer of General Insurance",
-      "company": "Institut Teknologi Sumatera",
-      "year": "2025",
-      "description": "Assisted lecturers in delivering General Insurance courses and supporting classroom activities.\n",
-      "achievements": [
-        "Explain actuarial modeling methods used in premium calculation reserves and insurance risk assessment.",
-        "Prepared learning materials and assisted in evaluating assignments and projects."
-      ]
     }
   ]
 }
