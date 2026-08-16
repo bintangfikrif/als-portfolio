@@ -76,10 +76,10 @@ export default function App() {
       <header id="about" className="max-w-5xl mx-auto px-6 py-20 md:py-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+            {/* <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
               <Award size={14} />
               <span>Fellow of the Society of Actuaries</span>
-            </div>
+            </div> */}
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
               Transforming Risk into calculated Strategy.
             </h1>
