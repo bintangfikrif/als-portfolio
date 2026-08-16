@@ -1,25 +1,149 @@
 import React, { useState, useEffect } from 'react';
-import { Award, Briefcase, FileText, Mail, ChevronRight } from 'lucide-react';
+import { Award, Briefcase, FileText, Mail, ChevronRight, GraduationCap, Users, Trophy } from 'lucide-react';
+
+function ExperienceTimeline({ items }) {
+  return (
+    <div className="space-y-10">
+      {items.map((item, index) => (
+        <div key={index} className="relative pl-8 md:pl-0">
+          <div className="md:grid md:grid-cols-4 gap-8 items-start">
+            <div className="mb-4 md:mb-0 md:text-right">
+              <span className="text-sm font-bold text-blue-700 uppercase tracking-widest">{item.year}</span>
+              <h4 className="font-semibold text-slate-900 mt-1">{item.title}</h4>
+              <p className="text-sm text-slate-500">{item.company || item.institution || item.organization}</p>
+            </div>
+
+            {/* Garis timeline vertical */}
+            <div className={`md:col-span-3 pb-8 md:border-l md:border-slate-200 md:pl-8 relative ${index === items.length - 1 ? 'border-none' : ''}`}>
+              <div className="hidden md:block absolute w-3 h-3 bg-blue-700 rounded-full -left-[6.5px] top-1.5 ring-4 ring-slate-50"></div>
+
+              <p className="text-slate-600 mb-4 text-sm leading-relaxed">
+                {item.description}
+              </p>
+
+              {/* Tampilkan list pencapaian jika ada */}
+              {item.achievements && item.achievements.length > 0 && (
+                <ul className="space-y-2 text-sm text-slate-700">
+                  {item.achievements.map((achievement, i) => (
+                    <li key={i} className="flex items-start">
+                      <ChevronRight size={16} className="text-blue-500 mr-2 shrink-0 mt-0.5" />
+                      <span>{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {/* Tampilkan foto kegiatan jika ada */}
+              {item.foto_kegiatan && (
+                <div className="mt-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100 group">
+                  <img
+                    src={item.foto_kegiatan}
+                    alt={`Dokumentasi ${item.title}`}
+                    className="w-full h-auto max-h-72 object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ProjectsGrid({ items }) {
+  return (
+    <div className="grid md:grid-cols-2 gap-8">
+      {items.map((item, index) => (
+        <div key={index} className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow">
+          <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+            {item.media ? (
+              <img src={item.media} alt={item.title} className="w-full h-full object-cover" />
+            ) : (
+              <span className="text-slate-400 text-sm font-medium">[Media Proyek]</span>
+            )}
+          </div>
+          <div className="p-6">
+            <h3 className="font-bold text-lg text-slate-900 mb-2">{item.title}</h3>
+            <p className="text-sm text-slate-600 leading-relaxed mb-4">{item.description}</p>
+            {item.tools && item.tools.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {item.tools.map((tool, i) => (
+                  <span key={i} className="text-xs font-medium bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function AwardsGrid({ items }) {
+  return (
+    <div className="grid md:grid-cols-3 gap-6">
+      {items.map((item, index) => (
+        <div key={index} className="text-center p-8 rounded-lg bg-gradient-to-b from-amber-50 to-white border border-amber-100 hover:shadow-md transition-shadow">
+          <div className="mx-auto mb-4 w-14 h-14 rounded-full bg-amber-100 flex items-center justify-center">
+            <Trophy className="text-amber-600" size={26} />
+          </div>
+          <h3 className="font-bold text-slate-900 mb-1">{item.title}</h3>
+          <p className="text-xs font-semibold text-amber-700 uppercase tracking-wider mb-3">
+            {item.issuer}{item.issuer && item.year ? ' · ' : ''}{item.year}
+          </p>
+          <p className="text-sm text-slate-600 leading-relaxed">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function App() {
   const [pengalaman, setPengalaman] = useState([]);
+  const [akademik, setAkademik] = useState([]);
+  const [organisasi, setOrganisasi] = useState([]);
+  const [projects, setProjects] = useState([]);
+  const [awards, setAwards] = useState([]);
   const [kredensial, setKredensial] = useState([]);
-  const [profil, setProfil] = useState({}); 
+  const [profil, setProfil] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Fungsi untuk mengambil data JSON
     const fetchData = async () => {
       try {
-        const [resPengalaman, resKredensial, resProfil] = await Promise.all([
+        const [resPengalaman, resAkademik, resOrganisasi, resProjects, resAwards, resKredensial, resProfil] = await Promise.all([
           fetch('/content/pengalaman.json'),
+          fetch('/content/akademik.json'),
+          fetch('/content/organisasi.json'),
+          fetch('/content/projects.json'),
+          fetch('/content/awards.json'),
           fetch('/content/kredensial.json'),
           fetch('/content/profil.json') // Ambil data profil
         ]);
-        
+
         if (resPengalaman.ok) {
           const dataPengalaman = await resPengalaman.json();
           setPengalaman(dataPengalaman.items || []);
+        }
+        if (resAkademik.ok) {
+          const dataAkademik = await resAkademik.json();
+          setAkademik(dataAkademik.items || []);
+        }
+        if (resOrganisasi.ok) {
+          const dataOrganisasi = await resOrganisasi.json();
+          setOrganisasi(dataOrganisasi.items || []);
+        }
+        if (resProjects.ok) {
+          const dataProjects = await resProjects.json();
+          setProjects(dataProjects.items || []);
+        }
+        if (resAwards.ok) {
+          const dataAwards = await resAwards.json();
+          setAwards(dataAwards.items || []);
         }
         if (resKredensial.ok) {
           const dataKredensial = await resKredensial.json();
@@ -64,6 +188,16 @@ export default function App() {
             )}
             
             <a href="#experience" className="hover:text-blue-700 transition-colors">Experience</a>
+
+            {/* Tampilkan menu Projects HANYA JIKA datanya ada */}
+            {projects.length > 0 && (
+              <a href="#projects" className="hover:text-blue-700 transition-colors">Projects</a>
+            )}
+
+            {/* Tampilkan menu Awards HANYA JIKA datanya ada */}
+            {awards.length > 0 && (
+              <a href="#awards" className="hover:text-blue-700 transition-colors">Awards</a>
+            )}
           </div>
           <a href="#contact" className="bg-slate-900 text-white px-5 py-2 text-sm font-medium rounded hover:bg-slate-800 transition-colors">
             Contact Me
@@ -146,57 +280,68 @@ export default function App() {
       {/* Experience Section */}
       <section id="experience" className="py-20 max-w-5xl mx-auto px-6">
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-900 mb-2">Profesional Experience</h2>
-          <p className="text-slate-500">Record of implementing predictive models and capital efficiency.</p>
+          <h2 className="text-2xl font-bold text-slate-900 mb-2">Experience</h2>
+          <p className="text-slate-500">Professional, academic, and organizational experience.</p>
         </div>
 
-        <div className="space-y-10">
-          {/* Map data pengalaman dari JSON */}
-          {pengalaman.map((item, index) => (
-            <div key={index} className="relative pl-8 md:pl-0">
-              <div className="md:grid md:grid-cols-4 gap-8 items-start">
-                <div className="mb-4 md:mb-0 md:text-right">
-                  <span className="text-sm font-bold text-blue-700 uppercase tracking-widest">{item.year}</span>
-                  <h4 className="font-semibold text-slate-900 mt-1">{item.title}</h4>
-                  <p className="text-sm text-slate-500">{item.company}</p>
-                </div>
-                
-                {/* Garis timeline vertical */}
-                <div className={`md:col-span-3 pb-8 md:border-l md:border-slate-200 md:pl-8 relative ${index === pengalaman.length - 1 ? 'border-none' : ''}`}>
-                  <div className="hidden md:block absolute w-3 h-3 bg-blue-700 rounded-full -left-[6.5px] top-1.5 ring-4 ring-slate-50"></div>
-                  
-                  <p className="text-slate-600 mb-4 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                  
-                  {/* Tampilkan list pencapaian jika ada */}
-                  {item.achievements && item.achievements.length > 0 && (
-                    <ul className="space-y-2 text-sm text-slate-700">
-                      {item.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-start">
-                          <ChevronRight size={16} className="text-blue-500 mr-2 shrink-0 mt-0.5" />
-                          <span>{achievement}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {/* Tampilkan foto kegiatan jika ada */}
-                  {item.foto_kegiatan && (
-                    <div className="mt-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100 group">
-                      <img 
-                        src={item.foto_kegiatan} 
-                        alt={`Dokumentasi ${item.title}`} 
-                        className="w-full h-auto max-h-72 object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" 
-                      />
-                    </div>
-                  )}
-                </div>
+        <div className="space-y-16">
+          {pengalaman.length > 0 && (
+            <div>
+              <div className="flex items-center space-x-2 mb-8">
+                <Briefcase size={18} className="text-blue-700" />
+                <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider">Professional</h3>
               </div>
+              <ExperienceTimeline items={pengalaman} />
             </div>
-          ))}
+          )}
+
+          {akademik.length > 0 && (
+            <div>
+              <div className="flex items-center space-x-2 mb-8">
+                <GraduationCap size={18} className="text-blue-700" />
+                <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider">Academic</h3>
+              </div>
+              <ExperienceTimeline items={akademik} />
+            </div>
+          )}
+
+          {organisasi.length > 0 && (
+            <div>
+              <div className="flex items-center space-x-2 mb-8">
+                <Users size={18} className="text-blue-700" />
+                <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider">Organizational</h3>
+              </div>
+              <ExperienceTimeline items={organisasi} />
+            </div>
+          )}
         </div>
       </section>
+
+      {/* Projects Section */}
+      {projects.length > 0 && (
+        <section id="projects" className="py-20 bg-white border-t border-slate-200">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-slate-900 mb-2">Projects</h2>
+              <p className="text-slate-500">Selected work applying analytical and technical tools to real problems.</p>
+            </div>
+
+            <ProjectsGrid items={projects} />
+          </div>
+        </section>
+      )}
+
+      {/* Awards Section */}
+      {awards.length > 0 && (
+        <section id="awards" className="py-20 max-w-5xl mx-auto px-6 border-t border-slate-200">
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-2">Awards</h2>
+            <p className="text-slate-500">Recognition earned along the way.</p>
+          </div>
+
+          <AwardsGrid items={awards} />
+        </section>
+      )}
 
       {}
       {/* Footer / Contact */}
