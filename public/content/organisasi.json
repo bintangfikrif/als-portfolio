@@ -1,14 +1,16 @@
 {
   "items": [
     {
-      "title": "Staff of Secretary Division",
+      "title": "Staff of Secretariat Department",
       "organization": "Himpunan Mahasiswa Sains Aktuaria ITERA",
-      "year": "2024",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "tools": ["Google Drive", "Microsoft Word", "Microsoft Excel"],
+      "start_date": "January 2024",
+      "end_date": "December 2024",
+      "description": "Managed organizational documents, including letters, proposals, reports, certificates, and supporting records, ensuring accurate and well-organized documentation.",
       "achievements": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-        "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Ut enim ad minim veniam"
+        "Handled outgoing letter requests and certificate numbering, maintaining accurate records and supporting timely document processing.",
+        "Organized and maintained document archives throughout the organizational period for easy and reliable access to records.",
+        "Coordinated documentation needs with members and related departments to ensure complete documents and smooth administrative processes."
       ],
       "foto_kegiatan": ""
     }

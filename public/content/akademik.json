@@ -3,23 +3,87 @@
     {
       "title": "Practicum Assistant of Statistical Data Analysis",
       "institution": "Institut Teknologi Sumatera",
-      "year": "2025",
+      "tools": ["Microsoft Excel", "Microsoft Power Point", "Microsoft Word", "R"],
+      "start_date": "September 2025",
+      "end_date": "December 2025",
       "description": "Assisted lecturers in facilitating practical sessions on statistical data analysis",
       "achievements": [
-        "Guided students in using Microsoft Excel and R for data processing analysis and interpretation.",
-        "Supported the review of assignments and practical work by ensuring accuracy and attention to detail.",
-        "Developed analytical communication and problem-solving skills through student mentoring and academic assistance"
+        "Led practicum sessions on descriptive statistics, probability distributions, hypothesis testing, correlation, regression, time series analysis, and ANOVA for undergraduate students.",
+        "Guided students in using statistical software to analyze data, read statistical results, and draw clear conclusions from the analysis.",
+        "Designed practical exercises and discussion sessions to help students solve statistical problems and apply data analysis methods to real cases.",
+        "Reviewed analytical reports and assignments, providing feedback to improve students’ accuracy, analytical thinking, and problem-solving skills."
+      ],
+      "foto_kegiatan": ""
+    },
+        {
+      "title": "Practicum Assistant of Sampling Method",
+      "institution": "Institut Teknologi Sumatera",
+      "tools": ["Microsoft Excel", "Microsoft Power Point", "Microsoft Word", "R"],
+      "start_date": "September 2025",
+      "end_date": "December 2025",
+      "description": "Assisted lecturers in facilitating practical sessions on sampling method.",
+      "achievements": [
+        "Led practicum sessions on sampling techniques, including probability sampling, non-probability sampling, and sample size determination.",
+        "Guided students in selecting suitable sampling methods and applying statistical software to analyze sample data.",
+        "Developed practical exercises that helped students understand how sampling methods affect data quality and analysis results.",
+        "Reviewed assignments and provided feedback on sampling methods, data analysis, and interpretation of results."
       ],
       "foto_kegiatan": ""
     },
     {
+      "title": "Assistant Lecturer of Multivariable Calculus",
+      "institution": "Institut Teknologi Sumatera",
+      "tools": ["Microsoft Power Point"],
+      "start_date": "September 2025",
+      "end_date": "Desember 2025",
+      "description": "Assisted lecturers in delivering Multivariable Calculus courses and supporting classroom activities.",
+      "achievements": [
+        "Supported lectures and tutorial sessions covering limits, infinite series, Riemann integrals, and single and multiple integrals.",
+        "Guided students through complex mathematical problems using clear and structured problem-solving approaches.",
+        "Led practice sessions that strengthened students’ mathematical reasoning, analytical thinking, and quantitative skills.",
+        "Reviewed assignments and assessed students’ progress to provide feedback and identify areas for improvement."
+      ]
+    },
+    {
       "title": "Assistant Lecturer of General Insurance",
       "institution": "Institut Teknologi Sumatera",
-      "year": "2025",
+      "tools": ["Microsoft Power Point", "Microsoft Excel"],
+      "start_date": "January 2025",
+      "end_date": "June 2025",
       "description": "Assisted lecturers in delivering General Insurance courses and supporting classroom activities.",
       "achievements": [
-        "Explain actuarial modeling methods used in premium calculation reserves and insurance risk assessment.",
-        "Prepared learning materials and assisted in evaluating assignments and projects."
+        "Guided students in understanding general insurance and actuarial concepts, including premium calculation, reserves, and insurance risk assessment.",
+        "Explained actuarial methods and helped students apply them to insurance problems and practical case studies.",
+        "Developed learning materials, practice questions, and case studies to connect actuarial theory with real insurance applications.",
+        "Reviewed assignments and provided feedback to improve students’ accuracy in actuarial calculations and understanding of insurance concepts."
+      ]
+    },
+    {
+      "title": "Practicum Assistant of Accounting",
+      "institution": "Institut Teknologi Sumatera",
+      "tools": ["Microsoft Word", "Microsoft Excel"],
+      "start_date": "July 2024",
+      "end_date": "December 2024",
+      "description": "Assisted lecturers in facilitating practical sessions on Accounting.",
+      "achievements": [
+        "Led practicum sessions covering general journals, ledgers, adjusting journal entries, and closing journal entries.",
+        "Guided students in applying accounting concepts to practical cases and recording financial transactions accurately.",
+        "Reviewed students work to identify errors and provided feedback to improve their understanding and accuracy.",
+        "Coordinated practicum activities and supported students throughout practical exercises to ensure effective learning."
+      ]
+    },
+    {
+      "title": "Practicum Assistant of Introduction to Computer and Software II",
+      "institution": "Institut Teknologi Sumatera",
+      "tools": ["Microsoft Power Point", "C++", "Flowgorithm"],
+      "start_date": "January 2024",
+      "end_date": "July 2024",
+      "description": "Assisted lecturers in facilitating practical sessions on Introduction to Computer & Software.",
+      "achievements": [
+        "Guided students in using Flowgorithm and C++ to understand basic programming concepts and develop simple solutions.",
+        "Led practical exercises that trained students to break down problems into logical steps and algorithms.",
+        "Supervised practicum sessions and helped students solve programming problems during hands-on activities.",
+        "Reviewed programming assignments and supported lecturers in evaluating students’ understanding of programming and algorithm concepts."
       ]
     }
   ]

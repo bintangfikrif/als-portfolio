@@ -3,12 +3,14 @@
     {
       "title": "Actuarial Intern",
       "company": "PT. Howden Insurance Brokers Indonesia",
-      "year": "2025",
-      "description": "Rotated across four divisions: CIR, FSA, GCRM, and Risk Management. Contributed to the development of actuarial models and risk assessment tools.",
+      "tools": ["Microsoft Excel", "Microsoft Power Point", "Microsoft Word", "Company System", "R"],
+      "start_date": "June 2025",
+      "end_date": "August 2025",
+      "description": "Rotated across 4 divisions: Corporate and Industrial Risks (CIR), Financial, SME and Affinity Risks (FSA), General Claims and Risk Management (GCRM), and Employee Benefit, gaining exposure to insurance products and broker operations.",
       "achievements": [
-        "Assisted in reviewing insurance documents, quotations, and policy-related information.",
-        "Supported claims administration and claim monitoring activities.",
-        "Conducted a case study by applying statistical and machine learning methods to support risk assessment and decision-making."
+        "Reviewed and prepared quotation, proposal, placing slip, confirmation slip, renewal notice, invoice, and policy documents, ensuring completeness, accuracy, and consistency of information.",
+        "Supported renewal and claims administration, including preparing renewal notices, registering claims, monitoring claim progress, and updating claim status through the internal system.",
+        "Coordinated with Marketing and internal teams to obtain required information and documentation, while analyzing group health insurance data for an insurance case study that achieved 82% test accuracy."
       ],
       "foto_kegiatan": "/images/kegiatan/img-1.jpg"
     }

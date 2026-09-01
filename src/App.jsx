@@ -1,52 +1,92 @@
 import React, { useState, useEffect } from 'react';
 import { Award, Briefcase, FileText, Mail, ChevronRight, GraduationCap, Users, Trophy } from 'lucide-react';
 
+const manualTools = [
+  { name: 'Microsoft Excel', logo: 'tools/ms_excel.svg' },
+  { name: 'Microsoft Word', logo: '/tools/ms_word.svg' },
+  { name: 'Microsoft Power Point', logo: '/tools/ms_ppt.svg'},
+  { name: 'Python', logo: '/tools/python.svg'},
+  { name: 'R', logo: '/tools/r.svg'},
+  { name: 'Google Data Studio', logo: '/tools/looker.svg'}
+];
+
 function ExperienceTimeline({ items }) {
+  const formatDateRange = (item) => {
+    const start = item.start_date || item.start_month || item.month_started || item.date_start || item.start;
+    const end = item.end_date || item.end_month || item.month_ended || item.date_end || item.end;
+    const legacyYear = item.year;
+
+    const normalizedStart = start ? String(start).trim() : '';
+    const normalizedEnd = end ? String(end).trim() : '';
+    const normalizedYear = legacyYear ? String(legacyYear).trim() : '';
+
+    if (normalizedStart && normalizedEnd) return `${normalizedStart} - ${normalizedEnd}`;
+    if (normalizedStart) return normalizedStart;
+    if (normalizedEnd) return normalizedEnd;
+    if (normalizedYear) return normalizedYear;
+    return '';
+  };
+
   return (
     <div className="space-y-10">
-      {items.map((item, index) => (
-        <div key={index} className="relative pl-8 md:pl-0">
-          <div className="md:grid md:grid-cols-4 gap-8 items-start">
-            <div className="mb-4 md:mb-0 md:text-right">
-              <span className="text-sm font-bold text-blue-700 uppercase tracking-widest">{item.year}</span>
-              <h4 className="font-semibold text-slate-900 mt-1">{item.title}</h4>
-              <p className="text-sm text-slate-500">{item.company || item.institution || item.organization}</p>
-            </div>
+      {items.map((item, index) => {
+        const dateRange = formatDateRange(item);
 
-            {/* Garis timeline vertical */}
-            <div className={`md:col-span-3 pb-8 md:border-l md:border-slate-200 md:pl-8 relative ${index === items.length - 1 ? 'border-none' : ''}`}>
-              <div className="hidden md:block absolute w-3 h-3 bg-blue-700 rounded-full -left-[6.5px] top-1.5 ring-4 ring-slate-50"></div>
+        return (
+          <div key={index} className="relative pl-8 md:pl-0">
+            <div className="md:grid md:grid-cols-4 gap-8 items-start">
+              <div className="mb-4 md:mb-0 md:text-right">
+                {dateRange && (
+                  <span className="text-sm font-bold text-blue-700 uppercase tracking-widest block">{dateRange}</span>
+                )}
+                <h4 className="font-semibold text-slate-900 mt-1">{item.title}</h4>
+                <p className="text-sm text-slate-500">{item.company || item.institution || item.organization}</p>
+                {item.tools && item.tools.length > 0 && (
+                  <div className="mt-2 flex flex-wrap justify-end gap-2">
+                    {item.tools.map((tool, i) => (
+                      <span key={i} className="text-[10px] font-medium bg-slate-100 text-slate-600 px-2 py-1 rounded-full">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-              <p className="text-slate-600 mb-4 text-sm leading-relaxed">
-                {item.description}
-              </p>
+              {/* Garis timeline vertical */}
+              <div className={`md:col-span-3 pb-8 md:border-l md:border-slate-200 md:pl-8 relative ${index === items.length - 1 ? 'border-none' : ''}`}>
+                <div className="hidden md:block absolute w-3 h-3 bg-blue-700 rounded-full -left-[6.5px] top-1.5 ring-4 ring-slate-50"></div>
 
-              {/* Tampilkan list pencapaian jika ada */}
-              {item.achievements && item.achievements.length > 0 && (
-                <ul className="space-y-2 text-sm text-slate-700">
-                  {item.achievements.map((achievement, i) => (
-                    <li key={i} className="flex items-start">
-                      <ChevronRight size={16} className="text-blue-500 mr-2 shrink-0 mt-0.5" />
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
+                <p className="text-slate-600 mb-4 text-sm leading-relaxed">
+                  {item.description}
+                </p>
 
-              {/* Tampilkan foto kegiatan jika ada */}
-              {item.foto_kegiatan && (
-                <div className="mt-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100 group">
-                  <img
-                    src={item.foto_kegiatan}
-                    alt={`Dokumentasi ${item.title}`}
-                    className="w-full h-auto max-h-72 object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
-                  />
-                </div>
-              )}
+                {/* Tampilkan list pencapaian jika ada */}
+                {item.achievements && item.achievements.length > 0 && (
+                  <ul className="space-y-2 text-sm text-slate-700">
+                    {item.achievements.map((achievement, i) => (
+                      <li key={i} className="flex items-start">
+                        <ChevronRight size={16} className="text-blue-500 mr-2 shrink-0 mt-0.5" />
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {/* Tampilkan foto kegiatan jika ada */}
+                {item.foto_kegiatan && (
+                  <div className="mt-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100 group">
+                    <img
+                      src={item.foto_kegiatan}
+                      alt={`Dokumentasi ${item.title}`}
+                      className="w-full h-auto max-h-72 object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                    />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
@@ -54,30 +94,51 @@ function ExperienceTimeline({ items }) {
 function ProjectsGrid({ items }) {
   return (
     <div className="grid md:grid-cols-2 gap-8">
-      {items.map((item, index) => (
-        <div key={index} className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow">
-          <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
-            {item.media ? (
-              <img src={item.media} alt={item.title} className="w-full h-full object-cover" />
-            ) : (
-              <span className="text-slate-400 text-sm font-medium">[Media Proyek]</span>
-            )}
-          </div>
-          <div className="p-6">
-            <h3 className="font-bold text-lg text-slate-900 mb-2">{item.title}</h3>
-            <p className="text-sm text-slate-600 leading-relaxed mb-4">{item.description}</p>
-            {item.tools && item.tools.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {item.tools.map((tool, i) => (
-                  <span key={i} className="text-xs font-medium bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">
-                    {tool}
+      {items.map((item, index) => {
+        const accessLabel = item.link ? (item.access || item.access_label || item.status || 'Not Public') : 'Not Public';
+
+        return (
+          <div key={index} className="rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow">
+            <div className="relative aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
+              {item.media ? (
+                <img src={item.media} alt={item.title} className="w-full h-full object-cover" />
+              ) : (
+                <span className="text-slate-400 text-sm font-medium">[Media Proyek]</span>
+              )}
+
+              <div className="absolute top-3 right-3">
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center px-3 py-1.5 rounded-full bg-slate-900 text-white text-[10px] font-semibold uppercase tracking-wide hover:bg-slate-700 transition-colors"
+                  >
+                    View Project
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-full bg-slate-200 text-slate-700 text-[10px] font-semibold uppercase tracking-wide">
+                    {accessLabel}
                   </span>
-                ))}
+                )}
               </div>
-            )}
+            </div>
+            <div className="p-6">
+              <h3 className="font-bold text-lg text-slate-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-slate-600 leading-relaxed mb-4">{item.description}</p>
+              {item.tools && item.tools.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {item.tools.map((tool, i) => (
+                    <span key={i} className="text-xs font-medium bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
@@ -215,11 +276,29 @@ export default function App() {
               <span>Fellow of the Society of Actuaries</span>
             </div> */}
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-              Transforming Risk into calculated Strategy.
+              Exploring Data, Solving Problems, Creating Insights.
             </h1>
-            <p className="text-slate-600 text-lg mb-8 leading-relaxed">
+            <p className="text-slate-600 text-lg mb-6 leading-relaxed">
               {profil.deskripsi || "Deskripsi portofolio..."}
             </p>
+
+            {manualTools.length > 0 && (
+              <div className="mb-8">
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Tools</p>
+                <div className="flex flex-wrap gap-3">
+                  {manualTools.map((tool, index) => (
+                    <div
+                      key={`${tool.name}-${index}`}
+                      className="inline-flex items-center justify-center w-12 h-12 rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden"
+                      title={tool.name}
+                    >
+                      <img src={tool.logo || '/tool-placeholder.svg'} alt={tool.name} className="w-8 h-8 object-contain" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="flex space-x-4">
               {/* Render tombol hanya jika profil.resume ada nilainya */}
               {profil.resume && (

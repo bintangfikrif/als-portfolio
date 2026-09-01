@@ -20,7 +20,10 @@ collections:
             fields:
               - {label: "Posisi", name: "title", widget: "string"}
               - {label: "Perusahaan", name: "company", widget: "string"}
-              - {label: "Tahun", name: "year", widget: "string"}
+              - {label: "Tools yang Digunakan", name: "tools", widget: "list", required: false, hint: "Contoh: Excel, Looker Studio, Power BI"}
+              - {label: "Bulan Mulai", name: "start_date", widget: "string", required: false, hint: "Contoh: June 2025"}
+              - {label: "Bulan Selesai", name: "end_date", widget: "string", required: false, hint: "Contoh: July 2025 atau Present"}
+              - {label: "Tahun (Legacy / fallback)", name: "year", widget: "string", required: false, hint: "Opsional, hanya untuk data lama"}
               - {label: "Deskripsi", name: "description", widget: "text"}
               - {label: "Pencapaian (Opsional)", name: "achievements", widget: "list", required: false}
               - {label: "Foto Kegiatan (Opsional)", name: "foto_kegiatan", widget: "image", required: false}
@@ -36,7 +39,10 @@ collections:
             fields:
               - {label: "Judul/Peran", name: "title", widget: "string"}
               - {label: "Institusi", name: "institution", widget: "string"}
-              - {label: "Tahun", name: "year", widget: "string"}
+              - {label: "Tools yang Digunakan", name: "tools", widget: "list", required: false, hint: "Contoh: Excel, Looker Studio, R"}
+              - {label: "Bulan Mulai", name: "start_date", widget: "string", required: false, hint: "Contoh: June 2025"}
+              - {label: "Bulan Selesai", name: "end_date", widget: "string", required: false, hint: "Contoh: July 2025 atau Present"}
+              - {label: "Tahun (Legacy / fallback)", name: "year", widget: "string", required: false, hint: "Opsional, hanya untuk data lama"}
               - {label: "Deskripsi", name: "description", widget: "text"}
               - {label: "Pencapaian (Opsional)", name: "achievements", widget: "list", required: false}
               - {label: "Foto Kegiatan (Opsional)", name: "foto_kegiatan", widget: "image", required: false}
@@ -52,7 +58,10 @@ collections:
             fields:
               - {label: "Jabatan/Peran", name: "title", widget: "string"}
               - {label: "Organisasi", name: "organization", widget: "string"}
-              - {label: "Tahun", name: "year", widget: "string"}
+              - {label: "Tools yang Digunakan", name: "tools", widget: "list", required: false, hint: "Contoh: Excel, Looker Studio, Canva"}
+              - {label: "Bulan Mulai", name: "start_date", widget: "string", required: false, hint: "Contoh: June 2025"}
+              - {label: "Bulan Selesai", name: "end_date", widget: "string", required: false, hint: "Contoh: July 2025 atau Present"}
+              - {label: "Tahun (Legacy / fallback)", name: "year", widget: "string", required: false, hint: "Opsional, hanya untuk data lama"}
               - {label: "Deskripsi", name: "description", widget: "text"}
               - {label: "Pencapaian (Opsional)", name: "achievements", widget: "list", required: false}
               - {label: "Foto Kegiatan (Opsional)", name: "foto_kegiatan", widget: "image", required: false}
@@ -69,6 +78,8 @@ collections:
               - {label: "Judul Proyek", name: "title", widget: "string"}
               - {label: "Deskripsi (Paragraf)", name: "description", widget: "text"}
               - {label: "Tools/Teknologi", name: "tools", widget: "list", required: false}
+              - {label: "Link Proyek (Opsional)", name: "link", widget: "string", required: false, hint: "Masukkan URL publik jika proyek bisa dibuka"}
+              - {label: "Status Akses / Label", name: "access", widget: "string", required: false, hint: "Contoh: NDA, Credentials, Not Public"}
               - {label: "Media/Gambar Proyek", name: "media", widget: "image", required: false}
 
       # 5. File JSON Awards
@@ -85,7 +96,7 @@ collections:
               - {label: "Tahun", name: "year", widget: "string"}
               - {label: "Deskripsi", name: "description", widget: "text"}
 
-      # 6. File JSON Kredensial
+      # 7. File JSON Kredensial
       - label: "Kredensial & Sertifikasi"
         name: "kredensial"
         file: "public/content/kredensial.json"
@@ -98,7 +109,7 @@ collections:
               - {label: "Penyelenggara", name: "issuer", widget: "string"}
               - {label: "Deskripsi", name: "description", widget: "text"}
       
-      # 7. File JSON Profil
+      # 8. File JSON Profil
       - label: "Data Profil Utama"
         name: "profil"
         file: "public/content/profil.json"

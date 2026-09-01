@@ -1,10 +1,28 @@
 {
   "items": [
     {
-      "title": "Best Girlfriend in The Universe",
-      "issuer": "Your Boyfriend",
-      "year": "2025",
-      "description": "Recognized as the sweetest, the prettiest, the best ever woman in the entire universe <3"
+      "title": "Top 10 Finalist in the Essay Competition - IPB Mathematic Challenge",
+      "issuer": "Institut Pertanian Bogor",
+      "year": "2024",
+      "description": "Selected as one of the Top 10 finalists in a national mathematics essay competition through analytical problem-solving."
+    },
+    {
+      "title": "TOP 6 OZT Award 2023",
+      "issuer": "LTPB ITERA",
+      "year": "2023",
+      "description": "Selected as one of the Top 6 finalists in ITERA's student achievement award, recognizing excellence in academic performance, scientific projects, and extracurricular involvement."
+    },
+    {
+      "title": "2nd Place Winner in the Ranking 1 Competition - Tiksa Gayuh Karya ITERA 2021",
+      "issuer": "ITERA",
+      "year": "2021",
+      "description": "Achieved 2nd place in a competitive knowledge-based competition that tested broad knowledge across mathematics, history, civics, general knowledge, and scouting."
+    },
+    {
+      "title": "1st Place Winner in the Quiz Competition - Tiksa Gayuh Karya ITERA 2019",
+      "issuer": "ITERA",
+      "year": "2019",
+      "description": "Achieved 1st place in a multidisciplinary quiz competition covering general knowledge, mathematics, history, civics, and scouting."
     }
   ]
 }
