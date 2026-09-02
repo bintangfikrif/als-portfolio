@@ -13,7 +13,7 @@
         "Designed practical exercises and discussion sessions to help students solve statistical problems and apply data analysis methods to real cases.",
         "Reviewed analytical reports and assignments, providing feedback to improve students’ accuracy, analytical thinking, and problem-solving skills."
       ],
-      "foto_kegiatan": ""
+      "foto_kegiatan": "/images/kegiatan/ADS.jpeg"
     },
         {
       "title": "Practicum Assistant of Sampling Method",
@@ -28,7 +28,7 @@
         "Developed practical exercises that helped students understand how sampling methods affect data quality and analysis results.",
         "Reviewed assignments and provided feedback on sampling methods, data analysis, and interpretation of results."
       ],
-      "foto_kegiatan": ""
+      "foto_kegiatan": "/images/kegiatan/TeknikSampling.jpeg"
     },
     {
       "title": "Assistant Lecturer of Multivariable Calculus",
@@ -42,7 +42,8 @@
         "Guided students through complex mathematical problems using clear and structured problem-solving approaches.",
         "Led practice sessions that strengthened students’ mathematical reasoning, analytical thinking, and quantitative skills.",
         "Reviewed assignments and assessed students’ progress to provide feedback and identify areas for improvement."
-      ]
+      ],
+      "foto_kegiatan": "/images/kegiatan/Kalkulus.jpeg"
     },
     {
       "title": "Assistant Lecturer of General Insurance",
@@ -56,7 +57,8 @@
         "Explained actuarial methods and helped students apply them to insurance problems and practical case studies.",
         "Developed learning materials, practice questions, and case studies to connect actuarial theory with real insurance applications.",
         "Reviewed assignments and provided feedback to improve students’ accuracy in actuarial calculations and understanding of insurance concepts."
-      ]
+      ],
+      "foto_kegiatan": "/images/kegiatan/Tut_asuransi.png"
     },
     {
       "title": "Practicum Assistant of Accounting",
@@ -70,7 +72,8 @@
         "Guided students in applying accounting concepts to practical cases and recording financial transactions accurately.",
         "Reviewed students work to identify errors and provided feedback to improve their understanding and accuracy.",
         "Coordinated practicum activities and supported students throughout practical exercises to ensure effective learning."
-      ]
+      ],
+      "foto_kegiatan": "/images/kegiatan/Akuntansi.jpeg"
     },
     {
       "title": "Practicum Assistant of Introduction to Computer and Software II",
@@ -84,7 +87,8 @@
         "Led practical exercises that trained students to break down problems into logical steps and algorithms.",
         "Supervised practicum sessions and helped students solve programming problems during hands-on activities.",
         "Reviewed programming assignments and supported lecturers in evaluating students’ understanding of programming and algorithm concepts."
-      ]
+      ],
+      "foto_kegiatan": "/images/kegiatan/pks2.jpeg"
     }
   ]
 }

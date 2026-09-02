@@ -4,77 +4,77 @@
       "title": "Excel Data Cleansing (2026)",
       "description": "Cleaned and standardized 3,600+ sales records by resolving duplicates, missing values, inconsistent text, and date formats to create reliable data for analysis.",
       "tools": ["Microsoft Excel"],
-      "link": "",
+      "link": "https://docs.google.com/spreadsheets/d/1ctbv0ZsLTFhs7B0NBX4yunrRGT_tkq2f/edit?usp=drive_link&ouid=104910048544868432745&rtpof=true&sd=true",
       "media": ""
     },
     {
       "title": "Excel Formula Analysis (2026)",
       "description": "Applied Excel functions including SUM, AVERAGE, COUNT, MIN, MAX, SUMIF, SUMIFS, IF-ELSE, and INDEX-MATCH to analyze, retrieve, and summarize business data.",
       "tools": ["Microsoft Excel"],
-      "link": "",
+      "link": "https://drive.google.com/drive/folders/1rV8aQ8XKZp9Hug2jAGLQjmEOv35tQoJb?usp=drive_link",
       "media": ""
     },
     {
       "title": "Excel Sales Dashboard (2026)",
       "description": "Built an interactive sales dashboard using Pivot Tables, Slicers, Filters, and Report Connections to visualize key sales information and support data-driven decisions.",
       "tools": ["Microsoft Excel", "Pivot Table", "Pivot Chart"],
-      "link": "",
+      "link": "https://drive.google.com/file/d/1CMz87Js9IIzYf9dGpL_j9gkkkg7q_rt-/view?usp=drive_link",
       "media": ""
     },
     {
       "title": "Life Insurance Reserve Analysis (2026)",
       "description": "Compared joint life endowment insurance reserves using CIR and Hull-White models with 25 years of interest rate data, achieving MAPE of 12.30% and 13.40%",
       "tools": ["R", "Microsoft Excel", "Microsoft Word", "Microsoft Power Point"],
-      "link": "https://repo.itera.ac.id/depan/submission/SB2605260095",
+      "link": "https://drive.google.com/file/d/1Qlg2DOViuIJ8HHmmiCxnF8oKzCWDqCVa/view?usp=drive_link",
       "media": ""
     },
     {
       "title": "PSO-XGBoost Bankruptcy Prediction (2025)",
       "description": "Developed an XGBoost bankruptcy prediction model optimized with PSO, improving accuracy from 83.68% to 93.30% and AUC from 0.8194 to 0.8772.",
       "tools":["Python", "Microsoft Excel", "Microsoft Word", "Microsoft Power Point"],
-      "link": "https://www.youtube.com/watch?v=X-EK60rmcQs&list=RDX-EK60rmcQs&start_radio=1",
-      "media": ""
+      "link": "https://drive.google.com/file/d/1kxgY126RxlOTrauyxUbOUIW_3M-rBO1E/view?usp=drive_link",
+      "media": "/images/project/sml.png"
     },
     {
       "title": "Health Insurance Renewal Prediction (2025)",
       "description": "Developed a Naïve Bayes model to predict group health insurance policy renewals, achieving 82% testing accuracy through data preprocessing, feature selection, and model evaluation.",
       "tools":["Python", "Microsoft Excel", "Microsoft Word", "Microsoft Power Point"],
-      "link": "",
+      "link": "https://drive.google.com/file/d/1Hc8RApJLrDDCjI4BWmOIYPKsDZ60JlZW/view?usp=drive_link",
       "media": ""
     },
     {
       "title": "Financial Statement Analysis (2025)",
       "description": "Analyzed PT Asuransi Bintang Tbk’s 2021–2023 financial performance, identifying declining operating cash flow, debt exposure, and unstable underwriting profitability through financial ratios.",
       "tools":["Microsoft Excel", "Microsoft Word", "Microsoft Power Point"],
-      "link": "",
+      "link": "https://drive.google.com/file/d/16nBxJRCvG_1_AQDvOYnOgAbVnV4_h-SZ/view?usp=drive_link",
       "media": ""
     },
     {
       "title": "Pension Funding Analysis (2025)",
       "description": "Calculated Normal Contribution, Actuarial Liability, and UAL using the Accrued Benefit Cost Method and TMI IV, identifying a growing pension funding deficit.",
       "tools":["Microsoft Excel", "Microsoft Word"],
-      "link": "",
+      "link": "https://drive.google.com/file/d/1sNnRWDBdJBYhmo3dQ-CVjxntqreM0uCZ/view?usp=drive_link",
       "media": ""
     },
     {
       "title": "Health Factors Regression Analysis (2025)",
       "description": "Analyzed five health factors using regression and 2023 Indonesian Health Survey data, with selected variables explaining 83.17% of diabetes prevalence variation.",
       "tools":["R", "Microsoft Excel", "Microsoft Word", "Microsoft Power Point"],
-      "link": "",
+      "link": "https://drive.google.com/file/d/1vPywvflgZzawJU4Hv37AwdCAbCfMgc55/view?usp=drive_link",
       "media": ""
     },
     {
       "title": "Insurance Reserve Forecasting (2024)",
       "description": "Forecasted general insurance premium reserves using ARIMA and 2016 – 2023 data, selecting ARIMA(1,1,1) and estimating January - March 2024 reserves of 24,319,169 – 24,905,093.",
       "tools":["R", "Microsoft Excel", "Microsoft Word", "Microsoft Power Point"],
-      "link": "",
+      "link": "https://drive.google.com/file/d/1SSjtvuEI1P0NdbqFKFvCEylILnDrGIUa/view?usp=drive_link",
       "media": ""
     },
     {
       "title": "Financial Accounting Analysis (2023)",
       "description": "Applied basic accounting principles by preparing general journals, ledgers, adjusting entries, and closing entries from financial transactions.",
       "tools":["Microsoft Excel", "Pivot Table"],
-      "link": "",
+      "link": "https://docs.google.com/spreadsheets/d/1ZWzlbtpCEDGAKoWVhHHwGVGA__FHjskw/edit?usp=drive_link&ouid=104910048544868432745&rtpof=true&sd=true",
       "media": ""
     }
   ]
