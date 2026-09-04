@@ -299,22 +299,7 @@ export default function App() {
               </div>
             )}
 
-            <div className="flex space-x-4">
-              {/* Render tombol hanya jika profil.resume ada nilainya */}
-              {profil.resume && (
-                <a 
-                  href={profil.resume} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download
-                  className="flex items-center space-x-2 bg-blue-700 text-white px-6 py-3 rounded font-medium hover:bg-blue-800 transition-colors shadow-sm"
-                >
-                  <FileText size={18} />
-                  <span>Download Resume</span>
-                </a>
-              )}
-            </div>
-          </div>
+          </div> 
           
           <div className="relative">
             <div className="aspect-[4/5] bg-slate-200 rounded-lg shadow-inner overflow-hidden flex items-center justify-center border-4 border-white shadow-lg">
