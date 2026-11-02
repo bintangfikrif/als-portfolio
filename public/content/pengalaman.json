@@ -1,23 +1,31 @@
 {
   "items": [
     {
+      "achievements": [
+        "Reviewed the completeness and accuracy of insurance application documents",
+        "including insurance applications",
+        "medical examination results",
+        "and supporting documents.",
+        "Assisted in assessing applicants' risks by reviewing their medical history",
+        "occupation",
+        "and other risk factors based on underwriting guidelines.",
+        "Updated application data and monitored underwriting progress and application status through the company's system.",
+        "Processed and checked underwriting data to support report preparation",
+        "application statistics",
+        "and coordination with related departments."
+      ],
+      "start_date": "September 2026",
+      "end_date": "Present",
+      "foto_kegiatan": "/images/whatsapp-image-2026-11-02-at-20.41.07.jpeg",
       "title": "Underwriting Intern",
-      "company": "PT. Perta Life Insurance",
       "tools": [
         "Excel",
         "Word",
         "Company's System"
       ],
-      "start_date": "September 2026",
-      "end_date": "Present",
-      "year": "2026",
       "description": "Supported Life and Health Insurance Underwriting activities, including risk assessment, application review, policy issuance, and reporting.",
-      "achievements": [
-        "Reviewed the completeness and accuracy of insurance application documents, including insurance applications, medical examination results, medical examination results, and supporting documents.",
-        "Assisted in assessing applicants' risks by reviewing their medical history, occupation, and other risk factors based on underwriting guidelines.",
-        "Updated application data and monitored underwriting progress and application status through the company's system.",
-        "Processed and checked underwriting data to support report preparation, application statistics, and coordination with related departments."
-      ]
+      "year": "2026",
+      "company": "PT. Perta Life Insurance"
     },
     {
       "title": "Student Intern",
