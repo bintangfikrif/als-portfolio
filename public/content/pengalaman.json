@@ -3,7 +3,13 @@
     {
       "title": "Student Intern",
       "company": "PT. Howden Insurance Brokers Indonesia",
-      "tools": ["Microsoft Excel", "Microsoft Power Point", "Microsoft Word", "Company System", "R"],
+      "tools": [
+        "Microsoft Excel",
+        "Microsoft Power Point",
+        "Microsoft Word",
+        "Company System",
+        "R"
+      ],
       "start_date": "June 2025",
       "end_date": "August 2025",
       "description": "Rotated across 4 divisions: Corporate and Industrial Risks (CIR), Financial, SME and Affinity Risks (FSA), General Claims and Risk Management (GCRM), and Employee Benefit, gaining exposure to insurance products and broker operations.",
@@ -13,6 +19,19 @@
         "Coordinated with Marketing and internal teams to obtain required information and documentation, while analyzing group health insurance data for an insurance case study that achieved 82% test accuracy."
       ],
       "foto_kegiatan": "/images/kegiatan/img-1.jpg"
+    },
+    {
+      "title": "Underwriting Intern",
+      "company": "PT. Perta Life Insurance",
+      "tools": [
+        "Excel",
+        "Word",
+        "Company's System"
+      ],
+      "start_date": "September",
+      "end_date": "Present",
+      "year": "2026",
+      "description": "Supported Life and Health Insurance Underwriting activities, including risk assessment, application review, policy issuance, and reporting.\nReviewed the completeness and accuracy of insurance application documents, including insurance applications, medical examination results, and supporting documents.\nAssisted in assessing applicants' risks by reviewing their medical history, occupation, and other risk factors based on underwriting guidelines.\nUpdated application data and monitored underwriting progress and application status through the company's system.\nProcessed and checked underwriting data to support report preparation, application statistics, and coordination with related departments."
     }
   ]
 }
